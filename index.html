@@ -3,73 +3,264 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Trabalho de Conclusão de Curso sobre Realidade Virtual Imersiva apresentado ao CESUPA em 1999">
-  <meta name="keywords" content="realidade virtual, RV, imersão, ciberespaço, CESUPA, computação">
-  <meta name="author" content="Raid Nadim Aboul Hosn, Claudia Pereira, Jackson Costa">
-  <title>Realidade Virtual Imersiva - Trabalho de Conclusão de Curso | CESUPA 1999</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Realidade Virtual Imersiva - Trabalho de Conclusão de Curso</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.8;
+      color: #000;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 0;
+      border-bottom: 3px solid #000;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 30px 0 15px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+
+    p {
+      margin: 15px 0;
+      text-align: justify;
+    }
+
+    .hero-image {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #999;
+    }
+
+    .thesis-info {
+      background-color: #f5f5f5;
+      padding: 25px;
+      margin: 30px 0;
+      border: 1px solid #ccc;
+    }
+
+    .authors {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
+
+    .author-card {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+
+    .author-card h3 {
+      margin-bottom: 15px;
+    }
+
+    .advisors {
+      background-color: #fffef0;
+      padding: 20px;
+      margin: 30px 0;
+      border: 1px solid #ccc;
+    }
+
+    .toc {
+      margin: 40px 0;
+    }
+
+    .toc h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .toc-section {
+      margin: 15px 0;
+    }
+
+    .toc-section a {
+      color: #0000EE;
+      text-decoration: underline;
+      font-size: 1.1em;
+      display: block;
+      padding: 5px 0;
+    }
+
+    .toc-section a:visited {
+      color: #551A8B;
+    }
+
+    .toc-section a:hover {
+      color: #FF0000;
+    }
+
+    .toc-subsection {
+      margin-left: 40px;
+      margin-top: 8px;
+    }
+
+    .toc-subsection a {
+      font-size: 1em;
+    }
+
+    .content-section {
+      margin: 40px 0;
+      padding: 30px 0;
+      border-top: 2px solid #ccc;
+    }
+
+    .contact {
+      text-align: center;
+      margin: 50px 0;
+      padding: 30px;
+      border: 2px solid #ccc;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 0;
+      padding: 30px 0;
+      border-top: 3px solid #000;
+    }
+
+    .nav-button {
+      background-color: #0000EE;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 1.1em;
+      transition: background-color 0.3s;
+    }
+
+    .nav-button:hover {
+      background-color: #0000CC;
+    }
+
+    .nav-button.disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+
+      .authors {
+        grid-template-columns: 1fr;
+      }
+
+      .navigation {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <header>
       <h1>Realidade Virtual Imersiva</h1>
-      <p lang="en" style="font-size: 1.1em; margin-top: var(--spacing-sm); font-style: italic;">Immersive Virtual Reality</p>
+      <p style="font-size: 1.1em; margin-top: 10px; font-style: italic;">Immersive Virtual Reality</p>
     </header>
 
-    <main>
-      <figure>
-        <img src="images/fig0.jpg" alt="Ilustração conceitual de Realidade Virtual mostrando pessoa usando equipamento de RV" width="450" height="341">
-        <figcaption>Figura 1: Representação de experiência imersiva em Realidade Virtual</figcaption>
-      </figure>
+    <div class="hero-image">
+      <img src="./www.oocities.org_files/fig0.jpg" alt="Virtual Reality Illustration" width="450" height="341">
+    </div>
 
-      <section class="thesis-info">
+    <div class="thesis-info">
         <h2>Computer Science Graduation Thesis</h2>
-        <p><strong lang="en">English:</strong> Computer Science Graduation Thesis presented as a partial requisite to the obtention of Computer Science degree from Centro de Ensino Superior do Pará - CESUPA - Brazil, year 1999</p>
+        <p><strong>English:</strong> Computer Science Graduation Thesis presented as a partial requisite to the obtention of Computer Science degree from Centro de Ensino Superior do Pará - CESUPA - Brazil, year 1999</p>
 
-        <p style="margin-top: var(--spacing-md);"><strong>Português:</strong> Trabalho de Conclusão de Curso apresentado como requisito parcial à obtenção do grau de Tecnólogo em Processamento de Dados pelo Centro de Ensino Superior do Pará - CESUPA no ano de 1999</p>
-      </section>
+        <p style="margin-top: 20px;"><strong>Português:</strong> Trabalho de Conclusão de Curso apresentado como requisito parcial à obtenção do grau de Tecnólogo em Processamento de Dados pelo Centro de Ensino Superior do Pará - CESUPA no ano de 1999</p>
+    </div>
 
-      <section class="authors" aria-label="Informações dos Autores">
-        <article class="author-card">
-          <h3>Raid Nadim Aboul Hosn</h3>
-          <p>Tecnólogo em Processamento de Dados</p>
-          <p><strong>CESUPA</strong> - Centro de Ensino Superior do Pará</p>
-          <p>21315 80th Ave W #220<br>
-          Edmonds, WA 98026<br>
-          USA</p>
-          <p><a href="mailto:raidhosn@msn.com">raidhosn@msn.com</a></p>
-        </article>
+    <section class="authors">
+      <div class="author-card">
+        <h3>Raid Nadim Aboul Hosn</h3>
+        <p>Tecnólogo em Processamento de Dados</p>
+        <p><strong>CESUPA</strong> - Centro de Ensino Superior do Pará</p>
+        <p>21315 80th Ave W #220</p>
+        <p>Edmonds, WA 98026</p>
+        <p>USA</p>
+        <p><a href="mailto:raidhosn@msn.com" style="color: #0000EE;">raidhosn@msn.com</a></p>
+      </div>
 
-        <article class="author-card">
-          <h3>Claudia Pereira</h3>
-          <h3 style="margin-top: var(--spacing-sm);">Jackson Costa</h3>
-          <p>Tecnóloga em Processamento de Dados</p>
-          <p><strong>CESUPA</strong> - Centro de Ensino Superior do Pará</p>
-          <p>Rua Antonio Everdosa 1245<br>
-          CEP: 66080-190<br>
-          Belém-Pará-Brasil</p>
-          <p><a href="mailto:menael@amazon.com.br">menael@amazon.com.br</a></p>
-        </article>
-      </section>
+      <div class="author-card">
+        <h3>Claudia Pereira</h3>
+        <h3 style="margin-top: 10px;">Jackson Costa</h3>
+        <p>Tecnóloga em Processamento de Dados</p>
+        <p><strong>CESUPA</strong> - Centro de Ensino Superior do Pará</p>
+        <p>Rua Antonio Everdosa 1245</p>
+        <p>CEP: 66080-190</p>
+        <p>Belém-Pará-Brasil</p>
+        <p><a href="mailto:menael@amazon.com.br" style="color: #0000EE;">menael@amazon.com.br</a></p>
+      </div>
+    </section>
 
-      <section class="advisors" aria-label="Orientação">
-        <p><strong>Orientador:</strong> Profª. Ms. Marianne Kogut Eliasquevici</p>
-        <p><strong>Coorientador:</strong> Prof. Dr. Gustavo Augusto Lima de Campos</p>
-        <p><strong>Supervisão Metodológica:</strong> Profª. Ms. Maria de Fátima Frayha de Souza</p>
-      </section>
+    <div class="advisors">
+      <p><strong>Orientador:</strong> Profª. Ms. Marianne Kogut Eliasquevici</p>
+      <p><strong>Coorientador:</strong> Prof. Dr. Gustavo Augusto Lima de Campos</p>
+      <p><strong>Supervisão Metodológica:</strong> Profª. Ms. Maria de Fátima Frayha de Souza</p>
+    </div>
 
-      <article class="content-box">
-        <h2 id="dedicatorias">Dedicatórias e Agradecimentos</h2>
+    <section class="content-section">
+      <h2>DEDICATÓRIAS E AGRADECIMENTOS</h2>
         <p>Este trabalho é dedicado a todos aqueles que acreditaram no potencial da Realidade Virtual como ferramenta transformadora da interação humano-computador.</p>
         <p>Agradecemos aos nossos orientadores, Profª. Ms. Marianne Kogut Eliasquevici e Prof. Dr. Gustavo Augusto Lima de Campos, pela dedicação, paciência e conhecimento compartilhado durante todo o desenvolvimento desta pesquisa.</p>
         <p>À Profª. Ms. Maria de Fátima Frayha de Souza, pela supervisão metodológica que foi fundamental para a estruturação deste trabalho.</p>
         <p>Aos nossos professores do CESUPA, que ao longo do curso nos proporcionaram a base de conhecimento necessária para a realização desta pesquisa.</p>
-        <p>Aos nossos familiares e amigos, pelo apoio incondicional e compreensão durante os momentos de ausência necessários para a conclusão deste trabalho.</p>
-        <p>A todos que, direta ou indiretamente, contribuíram para a realização desta pesquisa sobre Realidade Virtual Imersiva.</p>
-      </article>
+      <p>Aos nossos familiares e amigos, pelo apoio incondicional e compreensão durante os momentos de ausência necessários para a conclusão deste trabalho.</p>
+      <p>A todos que, direta ou indiretamente, contribuíram para a realização desta pesquisa sobre Realidade Virtual Imersiva.</p>
+    </section>
 
-      <article class="content-box">
-        <h2 id="introducao">Introdução</h2>
+    <section class="content-section">
+      <h2>INTRODUÇÃO</h2>
         <p>A Realidade Virtual (RV) emergiu nas últimas décadas como uma das áreas mais promissoras e revolucionárias da ciência da computação. Sua capacidade de criar ambientes sintéticos tridimensionais com os quais os usuários podem interagir de forma natural e intuitiva representa um paradigma fundamental na evolução da interface humano-computador.</p>
 
         <p>O conceito de Realidade Virtual transcende a simples apresentação de gráficos tridimensionais em uma tela. Trata-se da criação de experiências imersivas que envolvem múltiplos sentidos humanos - visão, audição, tato, e potencialmente olfato e paladar - para transportar o usuário para um mundo completamente novo, seja ele uma recriação fiel da realidade, uma simulação de ambientes impossíveis ou perigosos, ou uma visualização abstrata de dados e conceitos complexos.</p>
@@ -90,11 +281,11 @@
 
         <p>A metodologia empregada buscou não apenas compilar informações existentes, mas também analisá-las criticamente, identificando tendências, desafios e oportunidades no campo da Realidade Virtual Imersiva. Nosso objetivo é que este trabalho sirva não apenas como um documento histórico do estado da arte da RV no final dos anos 1990, mas também como uma fonte de consulta útil para estudantes, pesquisadores e profissionais interessados nesta fascinante área da tecnologia.</p>
 
-        <p>Convidamos o leitor a explorar conosco este universo virtual, descobrindo como a tecnologia está redefinindo os limites entre o real e o virtual, entre o possível e o imaginário, e como a Realidade Virtual Imersiva está moldando o futuro da interação humano-computador.</p>
-      </article>
+      <p>Convidamos o leitor a explorar conosco este universo virtual, descobrindo como a tecnologia está redefinindo os limites entre o real e o virtual, entre o possível e o imaginário, e como a Realidade Virtual Imersiva está moldando o futuro da interação humano-computador.</p>
+    </section>
 
-      <nav class="toc" aria-label="Índice do Trabalho">
-        <h2 id="indice">Índice</h2>
+    <section class="toc">
+      <h2>ÍNDICE</h2>
 
         <div class="toc-section">
           <a href="capitulo1.html"><strong>1. Capítulo 1 - Conceitos Fundamentais</strong></a>
@@ -173,20 +364,19 @@
 
         <div class="toc-section">
           <a href="glossario.html">Glossário</a>
-        </div>
-      </nav>
+      </div>
+    </section>
 
-      <section class="contact">
-        <img src="images/email6.gif" alt="Ícone de email" width="84" height="51">
-        <h3 style="margin: var(--spacing-sm) 0;">Contato</h3>
-        <p><a href="mailto:raidhosn@msn.com">raidhosn@msn.com</a></p>
-      </section>
-    </main>
+    <div class="contact">
+      <img src="./www.oocities.org_files/email6.gif" alt="Email" width="84" height="51">
+      <h3 style="margin: 15px 0 10px;">Contato</h3>
+      <p><a href="mailto:raidhosn@msn.com" style="color: #0000EE;">raidhosn@msn.com</a></p>
+    </div>
 
-    <nav class="navigation" aria-label="Navegação entre páginas">
-      <span class="nav-button disabled" aria-disabled="true">⬅️ Anterior</span>
-      <a href="index.html" class="nav-button" aria-label="Voltar para página principal">🏠 Página Principal</a>
-      <a href="capitulo1.html" class="nav-button" aria-label="Ir para Capítulo 1">Próximo ➡️</a>
+    <nav class="navigation">
+      <a href="#" class="nav-button disabled">⬅️ Anterior</a>
+      <a href="index.html" class="nav-button">🏠 Página Principal</a>
+      <a href="capitulo1.html" class="nav-button">Próximo ➡️</a>
     </nav>
   </div>
 </body>
