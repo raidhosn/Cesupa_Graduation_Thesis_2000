@@ -1,7 +1,92 @@
-<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
-  <rect width="600" height="400" fill="#f5f5f5" stroke="#999" stroke-width="2"/>
-  <rect x="50" y="50" width="500" height="300" fill="#e0e0e0" stroke="#666" stroke-width="1"/>
-  <text x="300" y="170" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">FIGURA 30</text>
-  <text x="300" y="210" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#555">HMD com múltiplos</text>
-  <text x="300" y="240" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#555">sensores ópticos</text>
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="700" height="500" fill="#f5f7fa"/>
+  <text x="350" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#2c3e50">HMD with Optical Sensors</text>
+  
+  <ellipse cx="350" cy="455" rx="140" ry="18" fill="#000000" opacity="0.1"/>
+  
+  <rect x="220" y="180" width="260" height="140" fill="#1a1a2a" stroke="#0d0d15" stroke-width="3" rx="20"/>
+  <rect x="230" y="190" width="110" height="120" fill="#000033" stroke="#4a90e2" stroke-width="2" rx="12"/>
+  <rect x="360" y="190" width="110" height="120" fill="#000033" stroke="#4a90e2" stroke-width="2" rx="12"/>
+  
+  <circle cx="285" cy="250" r="35" fill="#1a1a3a" stroke="#00d9ff" stroke-width="2"/>
+  <circle cx="415" cy="250" r="35" fill="#1a1a3a" stroke="#00d9ff" stroke-width="2"/>
+  
+  <g opacity="0.7">
+    <circle cx="285" cy="250" r="25" fill="#4a90e2" opacity="0.4"/>
+    <circle cx="415" cy="250" r="25" fill="#4a90e2" opacity="0.4"/>
+  </g>
+  
+  <circle cx="280" cy="245" r="8" fill="#00d9ff" opacity="0.8"/>
+  <circle cx="410" cy="245" r="8" fill="#00d9ff" opacity="0.8"/>
+  
+  <g fill="#e74c3c">
+    <circle cx="260" cy="210" r="4"/>
+    <circle cx="310" cy="210" r="4"/>
+    <circle cx="390" cy="210" r="4"/>
+    <circle cx="440" cy="210" r="4"/>
+    <circle cx="260" cy="290" r="4"/>
+    <circle cx="310" cy="290" r="4"/>
+    <circle cx="390" cy="290" r="4"/>
+    <circle cx="440" cy="290" r="4"/>
+  </g>
+  
+  <g fill="#2ecc71">
+    <circle cx="238" cy="240" r="4"/>
+    <circle cx="332" cy="240" r="4"/>
+    <circle cx="368" cy="240" r="4"/>
+    <circle cx="462" cy="240" r="4"/>
+  </g>
+  
+  <g opacity="0.5" fill="#f39c12">
+    <rect x="240" y="198" width="3" height="3"/>
+    <rect x="250" y="198" width="3" height="3"/>
+    <rect x="320" y="198" width="3" height="3"/>
+    <rect x="330" y="198" width="3" height="3"/>
+    <rect x="370" y="198" width="3" height="3"/>
+    <rect x="380" y="198" width="3" height="3"/>
+    <rect x="450" y="198" width="3" height="3"/>
+    <rect x="460" y="198" width="3" height="3"/>
+  </g>
+  
+  <rect x="310" y="160" width="80" height="12" fill="#34495e" stroke="#2c3e50" stroke-width="2" rx="4"/>
+  <g>
+    <circle cx="325" cy="166" r="3" fill="#e74c3c"/>
+    <circle cx="340" cy="166" r="3" fill="#2ecc71"/>
+    <circle cx="355" cy="166" r="3" fill="#f39c12"/>
+    <circle cx="370" cy="166" r="3" fill="#3498db"/>
+  </g>
+  
+  <rect x="200" y="240" width="20" height="40" fill="#34495e" stroke="#2c3e50" stroke-width="2" rx="8"/>
+  <rect x="480" y="240" width="20" height="40" fill="#34495e" stroke="#2c3e50" stroke-width="2" rx="8"/>
+  
+  <g stroke="#00d9ff" stroke-width="1" opacity="0.4">
+    <line x1="260" y1="210" x2="240" y2="180"/>
+    <line x1="440" y1="210" x2="460" y2="180"/>
+    <line x1="260" y1="290" x2="240" y2="320"/>
+    <line x1="440" y1="290" x2="460" y2="320"/>
+  </g>
+  
+  <rect x="305" y="320" width="90" height="20" fill="#2c3e50" stroke="#1a252f" stroke-width="2" rx="4"/>
+  <g opacity="0.6">
+    <rect x="315" y="325" width="3" height="10" fill="#00d9ff"/>
+    <rect x="325" y="325" width="3" height="10" fill="#00d9ff"/>
+    <rect x="335" y="325" width="3" height="10" fill="#00d9ff"/>
+    <rect x="345" y="325" width="3" height="10" fill="#00d9ff"/>
+    <rect x="355" y="325" width="3" height="10" fill="#00d9ff"/>
+    <rect x="365" y="325" width="3" height="10" fill="#00d9ff"/>
+    <rect x="375" y="325" width="3" height="10" fill="#00d9ff"/>
+  </g>
+  
+  <line x1="350" y1="340" x2="350" y2="380" stroke="#5d6d7e" stroke-width="4"/>
+  <rect x="310" y="375" width="80" height="60" fill="#7f8c8d" stroke="#5d6d7e" stroke-width="2" rx="6"/>
+  
+  <g opacity="0.3">
+    <line x1="320" y1="385" x2="380" y2="385" stroke="#34495e" stroke-width="1"/>
+    <line x1="320" y1="395" x2="380" y2="395" stroke="#34495e" stroke-width="1"/>
+    <line x1="320" y1="405" x2="380" y2="405" stroke="#34495e" stroke-width="1"/>
+    <line x1="320" y1="415" x2="380" y2="415" stroke="#34495e" stroke-width="1"/>
+    <line x1="320" y1="425" x2="380" y2="425" stroke="#34495e" stroke-width="1"/>
+  </g>
+  
+  <text x="350" y="485" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666" font-style="italic">Head-Mounted Display with Tracking Sensors</text>
 </svg>
