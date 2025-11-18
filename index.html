@@ -2,29 +2,64 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-  <link rel="manifest" href="https://www.oocities.org/geocities-archive/manifest.json">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>Raid Hosn Webpage - Immersive Virtual Reality</title>
   <style type="text/css">
-    html { max-width:1630px; overflow:auto; }
-    frameset { max-width: 1024px !important; width:1024px !important; }
-  </style>
-  <script type="text/javascript">
-    if (window == top) {
-      document.write('<div id="content" style="max-width:1024px;overflow:auto">');
-    } else {
-      document.write('<div id="content" style="max-width:805px; max-height:1500px;overflow:auto">');
-      var width  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-      var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
     }
-  </script>
-  <title>Raid Hosn Webpage</title>
+    #header {
+      background-color: #ffffe0;
+      padding: 10px 2.2vw;
+      border-bottom: 5px solid #f7f7f7;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    #container {
+      display: flex;
+      max-width: 1630px;
+      margin: 0 auto;
+    }
+    #main-content {
+      flex: 1;
+      max-width: 805px;
+      padding: 20px;
+      overflow: auto;
+    }
+    #sidebar {
+      width: 220px;
+      background: rgba(136, 131, 134, 0.1);
+      padding: 10px;
+    }
+    @media (max-width: 1024px) {
+      #container {
+        flex-direction: column;
+      }
+      #sidebar {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
-<frameset id="FRR" rows="33,*" frameborder="NO" border="0" framespacing="0">
-  <frame id="h1749289548198" name="h1749289548198" noresize="noresize" frameborder="0" src="./www.oocities.org_files/header.html">
-  <frameset id="FR" cols="805,*" frameborder="NO" border="0" framespacing="0">
-    <frame id="m1749289548198" name="m1749289548198" noresize="noresize" frameborder="0" src="./www.oocities.org_files/saved_resource.html">
-    <frame id="s1749289548198" name="s1749289548198" noresize="noresize" frameborder="0" src="./www.oocities.org_files/side.html">
-  </frameset>
-</frameset>
+<body>
+  <div id="header">
+    <font style="font-size:15px" color="#000000">
+      <b>This page</b> is old! In a 🏛️Museum, an unsorted archive of (user-)pages.
+      (Saved from Geocities in Oct-2009. The archival story:
+      <a style="color:#005577" href="https://oocities.org/" target="_new" title="geocities archive">oocities.org</a>)
+    </font>
+  </div>
+
+  <div id="container">
+    <div id="main-content">
+      <iframe src="./www.oocities.org_files/saved_resource.html"
+              style="width:100%; min-height:1500px; border:none;"
+              scrolling="auto"></iframe>
+    </div>
+  </div>
+</body>
+</html>
 <!-- saved from url=(0034)https://www.oocities.org/raidhosn/ -->
