@@ -11,52 +11,49 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #333;
+      line-height: 1.8;
+      color: #000;
       background-color: #ffffff;
-      max-width: 1200px;
-      margin: 0 auto;
       padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     header {
       text-align: center;
-      padding: 40px 20px;
-      border-bottom: 3px solid #003399;
+      padding: 40px 0;
+      border-bottom: 3px solid #000;
       margin-bottom: 40px;
     }
 
     h1 {
-      font-size: 2.5em;
-      color: #003399;
-      margin-bottom: 20px;
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 10px;
       font-style: italic;
     }
 
     h2 {
-      font-size: 1.8em;
-      color: #003399;
+      font-size: 1.5em;
+      font-weight: bold;
       margin: 30px 0 15px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #e0e0e0;
+      text-align: center;
     }
 
     h3 {
-      font-size: 1.4em;
-      color: #555;
+      font-size: 1.2em;
+      font-weight: bold;
       margin: 20px 0 10px;
     }
 
-    h4 {
-      font-size: 1.2em;
-      color: #666;
-      margin: 15px 0 8px;
+    p {
+      margin: 15px 0;
+      text-align: justify;
     }
 
     .hero-image {
@@ -67,698 +64,320 @@
     .hero-image img {
       max-width: 100%;
       height: auto;
-      border: 1px solid #ddd;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      border: 1px solid #999;
     }
 
     .thesis-info {
-      background-color: #f8f9fa;
+      background-color: #f5f5f5;
       padding: 25px;
       margin: 30px 0;
-      border-left: 4px solid #003399;
-      border-radius: 4px;
-    }
-
-    .thesis-info p {
-      margin: 10px 0;
-    }
-
-    .abstract {
-      background-color: #f0f4f8;
-      padding: 30px;
-      margin: 30px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    .abstract p {
-      text-align: justify;
-      font-size: 1.05em;
-      line-height: 1.8;
-    }
-
-    .abstract em {
-      font-family: 'Comic Sans MS', cursive;
-      font-style: italic;
+      border: 1px solid #ccc;
     }
 
     .authors {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
       margin: 40px 0;
     }
 
     .author-card {
-      background-color: #ffffff;
+      background-color: #f9f9f9;
       padding: 20px;
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      border: 1px solid #ddd;
     }
 
     .author-card h3 {
-      color: #003399;
-      font-size: 1.3em;
       margin-bottom: 15px;
-    }
-
-    .author-card p {
-      margin: 8px 0;
-      font-size: 0.95em;
-    }
-
-    .author-card a {
-      color: #003399;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .author-card a:hover {
-      color: #cc0000;
-      text-decoration: underline;
     }
 
     .advisors {
       background-color: #fffef0;
       padding: 20px;
       margin: 30px 0;
-      border-radius: 4px;
-      border: 1px solid #e8e8d0;
+      border: 1px solid #ccc;
     }
 
-    .table-of-contents {
+    .toc {
       margin: 40px 0;
     }
 
-    .table-of-contents h2 {
+    .toc h2 {
       text-align: center;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
     .toc-section {
-      margin: 20px 0;
+      margin: 15px 0;
     }
 
     .toc-section a {
-      color: #003399;
-      text-decoration: none;
+      color: #0000EE;
+      text-decoration: underline;
+      font-size: 1.1em;
       display: block;
-      padding: 8px 0;
-      transition: all 0.2s;
+      padding: 5px 0;
+    }
+
+    .toc-section a:visited {
+      color: #551A8B;
     }
 
     .toc-section a:hover {
-      color: #cc0000;
-      padding-left: 10px;
-      background-color: #f8f9fa;
+      color: #FF0000;
     }
 
     .toc-subsection {
-      margin-left: 30px;
-      font-size: 0.95em;
+      margin-left: 40px;
+      margin-top: 8px;
+    }
+
+    .toc-subsection a {
+      font-size: 1em;
     }
 
     .content-section {
-      margin: 60px 0;
-      padding: 30px;
-      background-color: #fafafa;
-      border-radius: 8px;
-      border-left: 4px solid #003399;
-    }
-
-    .content-section p {
-      margin: 15px 0;
-      text-align: justify;
-      line-height: 1.8;
-    }
-
-    .subsection {
-      margin: 30px 0 20px 20px;
+      margin: 40px 0;
+      padding: 30px 0;
+      border-top: 2px solid #ccc;
     }
 
     .contact {
       text-align: center;
       margin: 50px 0;
       padding: 30px;
-      background-color: #f8f9fa;
-      border-radius: 8px;
+      border: 2px solid #ccc;
     }
 
-    .contact img {
-      margin: 10px 0;
+    .navigation {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 0;
+      padding: 30px 0;
+      border-top: 3px solid #000;
     }
 
-    .contact a {
-      color: #003399;
-      font-size: 1.2em;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .contact a:hover {
-      color: #cc0000;
-    }
-
-    .back-to-top {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background-color: #003399;
+    .nav-button {
+      background-color: #0000EE;
       color: white;
-      padding: 12px 18px;
-      border-radius: 50px;
+      padding: 15px 30px;
       text-decoration: none;
       font-weight: bold;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      transition: all 0.3s;
-      z-index: 1000;
+      border-radius: 5px;
+      font-size: 1.1em;
+      transition: background-color 0.3s;
     }
 
-    .back-to-top:hover {
-      background-color: #002266;
-      transform: translateY(-3px);
-      box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+    .nav-button:hover {
+      background-color: #0000CC;
+    }
+
+    .nav-button.disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
     }
 
     @media (max-width: 768px) {
       body {
-        padding: 15px;
+        padding: 10px;
       }
 
       h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
       }
 
       h2 {
-        font-size: 1.4em;
+        font-size: 1.3em;
       }
 
       .authors {
         grid-template-columns: 1fr;
       }
 
-      .thesis-info,
-      .abstract {
-        padding: 20px;
-      }
-
-      .back-to-top {
-        bottom: 20px;
-        right: 20px;
-        padding: 10px 15px;
-        font-size: 0.9em;
+      .navigation {
+        flex-direction: column;
+        gap: 10px;
       }
     }
   </style>
 </head>
 <body>
-  <header id="topo">
-    <h1>Realidade Virtual Imersiva</h1>
-    <p style="font-size: 1.1em; color: #666; margin-top: 10px;">Immersive Virtual Reality</p>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Realidade Virtual Imersiva</h1>
+      <p style="font-size: 1.1em; margin-top: 10px; font-style: italic;">Immersive Virtual Reality</p>
+    </header>
 
-  <div class="hero-image">
-    <a href="./www.oocities.org_files/fig0.jpg">
+    <div class="hero-image">
       <img src="./www.oocities.org_files/fig0.jpg" alt="Virtual Reality Illustration" width="450" height="341">
-    </a>
-  </div>
-
-  <div class="thesis-info">
-    <h2>Computer Science Graduation Thesis</h2>
-    <p><strong>English:</strong> Computer Science Graduation Thesis presented as a partial requisite to the obtention of Computer Science degree from Centro de Ensino Superior do Pará - CESUPA - Brazil, year 1999</p>
-
-    <p style="margin-top: 20px;"><strong>Português:</strong> Trabalho de Conclusão de Curso apresentado como requisito parcial à obtenção do grau de Tecnólogo em Processamento de Dados pelo Centro de Ensino Superior do Pará - CESUPA no ano de 1999</p>
-  </div>
-
-  <div class="abstract" id="abstract">
-    <h2>Abstract</h2>
-    <p>
-      Taking into account the development of the <em>Virtual Reality</em> in the last years, this work presents the main forms of VR, considering its participation in the creation of immersive experiences, that is the main purpose of this work. In this way, it is necessary to present respectively, among other, the notions of <em>Cyberspace</em>, <em>Cybertime</em>, <em>Space</em> and <em>Absolute Time</em> that allow a general vision of the area. Following, the several immersive forms of VR, we uttered, also, the forms of <em>Telepresence</em>, <em>Hypertext</em> and <em>Cyborgs</em>, proposing them as a new interface paradigm with the user. Through examples, the existent applications of VR are focused in several areas of the knowledge. Therefore, the present work counts with a vast bibliographical resource obtained through several research forms (Internet, Books, Centers of Research and Development, Published Works and Lectures), which, in a certain way, makes to stand out its importance as source for consultation.
-    </p>
-  </div>
-
-  <section class="authors" id="autores">
-    <div class="author-card">
-      <h3>Raid Nadim Aboul Hosn</h3>
-      <p>Tecnólogo em Processamento de Dados</p>
-      <p><a href="http://www.cesupa.br/">CESUPA</a> - Centro de Ensino Superior do Pará</p>
-      <p>21315 80th Ave W #220</p>
-      <p>Edmonds, WA 98026</p>
-      <p>USA</p>
-      <p><a href="mailto:raidhosn@msn.com">raidhosn@msn.com</a></p>
-      <p style="margin-top: 15px;">
-        <img src="./www.oocities.org_files/maogif.gif" alt="Click" width="34" height="19">
-        Raid's Resume:
-        <a href="#contato">Contact</a>
-      </p>
     </div>
 
-    <div class="author-card">
-      <h3>Claudia Pereira</h3>
-      <h3 style="margin-top: 10px;">Jackson Costa</h3>
-      <p>Tecnóloga em Processamento de Dados</p>
-      <p><a href="http://www.cesupa.br/">CESUPA</a> - Centro de Ensino Superior do Pará</p>
-      <p>Rua Antonio Everdosa 1245</p>
-      <p>CEP: 66080-190</p>
-      <p>Belém-Pará-Brasil</p>
-      <p><a href="mailto:menael@amazon.com.br">menael@amazon.com.br</a></p>
-    </div>
-  </section>
+    <div class="thesis-info">
+      <h3>Computer Science Graduation Thesis</h3>
+      <p><strong>English:</strong> Computer Science Graduation Thesis presented as a partial requisite to the obtention of Computer Science degree from Centro de Ensino Superior do Pará - CESUPA - Brazil, year 1999</p>
 
-  <div class="advisors">
-    <p><strong>Orientador:</strong> Profª. Ms. Marianne Kogut Eliasquevici</p>
-    <p><strong>Coorientador:</strong> Prof. Dr. Gustavo Augusto Lima de Campos</p>
-    <p><strong>Supervisão Metodológica:</strong> Profª. Ms. Maria de Fátima Frayha de Souza</p>
-  </div>
-
-  <section class="table-of-contents" id="indice">
-    <h2>ÍNDICE</h2>
-
-    <div class="toc-section">
-      <a href="#dedicatorias">DEDICATÓRIAS E AGRADECIMENTOS</a>
+      <p style="margin-top: 20px;"><strong>Português:</strong> Trabalho de Conclusão de Curso apresentado como requisito parcial à obtenção do grau de Tecnólogo em Processamento de Dados pelo Centro de Ensino Superior do Pará - CESUPA no ano de 1999</p>
     </div>
 
-    <div class="toc-section">
-      <a href="#introducao">INTRODUÇÃO</a>
-    </div>
-
-    <div class="toc-section">
-      <a href="#capitulo1"><strong>1. CAPÍTULO 1 - CONCEITOS FUNDAMENTAIS</strong></a>
-      <div class="toc-subsection">
-        <a href="#capitulo1-1">1.1 O CIBERESPAÇO</a>
-        <a href="#capitulo1-2">1.2 O ESPAÇO</a>
-        <a href="#capitulo1-3">1.3 O CIBERTEMPO</a>
-      </div>
-    </div>
-
-    <div class="toc-section">
-      <a href="#capitulo2"><strong>2. CAPÍTULO 2 - O QUE É REALIDADE VIRTUAL</strong></a>
-      <div class="toc-subsection">
-        <a href="#capitulo2-1">2.1 BREVE HISTÓRICO</a>
-        <a href="#capitulo2-2">2.2 DEFINIÇÕES</a>
-        <a href="#capitulo2-2-1">2.2.1 Interação</a>
-        <a href="#capitulo2-2-2">2.2.2 Envolvimento</a>
-        <a href="#capitulo2-2-3">2.2.3 Imersão</a>
-      </div>
-    </div>
-
-    <div class="toc-section">
-      <a href="#capitulo3"><strong>3. CAPÍTULO 3 - FORMAS DE REALIDADE VIRTUAL IMERSIVA</strong></a>
-      <div class="toc-subsection">
-        <a href="#capitulo3-1">3.1 RV DE SIMULAÇÃO</a>
-        <a href="#capitulo3-2">3.2 REALIDADE VIRTUAL DE PROJEÇÃO</a>
-        <a href="#capitulo3-3">3.3 AUGMENTED REALITY (REALIDADE REALÇADA)</a>
-        <a href="#capitulo3-4">3.4 DISPOSITIVOS FÍSICOS</a>
-        <a href="#capitulo3-4-1">3.4.1 Feedback Tátil</a>
-        <a href="#capitulo3-4-2">3.4.2 Feedback de Força</a>
-        <a href="#capitulo3-4-3">3.4.3 Feedback Térmico</a>
-        <a href="#capitulo3-5">3.5 TELEPRESENÇA</a>
-        <a href="#capitulo3-6">3.6 VISUALLY COUPLED DISPLAYS (DISPLAYS VISUALMENTE CASADOS)</a>
-        <a href="#capitulo3-7">3.7 REALIDADE VIRTUAL DE MESA (DESKTOP RV)</a>
-        <a href="#capitulo3-8">3.8 HYPERTEXTO (HIPERTEXTO)</a>
-        <a href="#capitulo3-9">3.9 SOM 3D</a>
-        <a href="#capitulo3-10">3.10 CIBORG</a>
-      </div>
-    </div>
-
-    <div class="toc-section">
-      <a href="#capitulo4"><strong>4. CAPÍTULO 4 - DISPOSITIVOS PARA REALIDADE VIRTUAL</strong></a>
-      <div class="toc-subsection">
-        <a href="#capitulo4-1">4.1 DISPOSITIVOS VISUAIS</a>
-        <a href="#capitulo4-1-1">4.1.1 Visores Desktop</a>
-        <a href="#capitulo4-1-2">4.1.2 HMD's (Head Mounted Displays)</a>
-        <a href="#capitulo4-1-3">4.1.3 AMD's (Arm-Mounted Displays)</a>
-        <a href="#capitulo4-1-4">4.1.4 Sistemas baseados em Projeção de Tela Simples</a>
-        <a href="#capitulo4-1-5">4.1.5 Sistemas baseados em Projeção de Tela Múltipla</a>
-        <a href="#capitulo4-2">4.2 SISTEMAS DE RASTREAMENTO</a>
-        <a href="#capitulo4-2-1">4.2.1 Eletromagnético</a>
-        <a href="#capitulo4-2-2">4.2.2 Mecânico</a>
-        <a href="#capitulo4-2-3">4.2.3 Acústico</a>
-        <a href="#capitulo4-2-4">4.2.4 Óptico</a>
-        <a href="#capitulo4-2-5">4.2.5 Inércia</a>
-        <a href="#capitulo4-3">4.3 PROCESSAMENTO DE IMAGEM</a>
-        <a href="#capitulo4-4">4.4 DISPOSITIVOS DE ENTRADA</a>
-      </div>
-    </div>
-
-    <div class="toc-section">
-      <a href="#capitulo5"><strong>5. CAPÍTULO 5 - APLICABILIDADE</strong></a>
-      <div class="toc-subsection">
-        <a href="#capitulo5-1">5.1 DISTÚRBIOS BIOPSICOSSOCIAIS</a>
-        <a href="#capitulo5-2">5.2 MEDICINA</a>
-        <a href="#capitulo5-3">5.3 ARQUITETURA E CONSTRUÇÃO</a>
-        <a href="#capitulo5-4">5.4 ARTE</a>
-        <a href="#capitulo5-5">5.5 NEGÓCIOS</a>
-        <a href="#capitulo5-6">5.6 DEFICIÊNCIAS</a>
-        <a href="#capitulo5-7">5.7 EDUCAÇÃO E TREINAMENTO</a>
-        <a href="#capitulo5-8">5.8 ENGENHARIA</a>
-        <a href="#capitulo5-9">5.9 ENTRETENIMENTO</a>
-        <a href="#capitulo5-10">5.10 MARKETING</a>
-        <a href="#capitulo5-11">5.11 MILITARISMO</a>
-        <a href="#capitulo5-12">5.12 RELIGIÃO</a>
-        <a href="#capitulo5-13">5.13 SEXO</a>
-        <a href="#capitulo5-14">5.14 COMUNIDADES VIRTUAIS</a>
-        <a href="#capitulo5-15">5.15 PASSEIO CICLÍSTICO VIRTUAL</a>
-      </div>
-    </div>
-
-    <div class="toc-section">
-      <a href="#consideracoes"><strong>6. CONSIDERAÇÕES FINAIS</strong></a>
-    </div>
-
-    <div class="toc-section">
-      <a href="#bibliografia">BIBLIOGRAFIA</a>
-    </div>
-
-    <div class="toc-section">
-      <a href="#glossario">GLOSSÁRIO</a>
-    </div>
-  </section>
-
-  <section class="content-section" id="dedicatorias">
-    <h2>DEDICATÓRIAS E AGRADECIMENTOS</h2>
-    <p>Este trabalho é dedicado a todos aqueles que acreditaram no potencial da Realidade Virtual como ferramenta transformadora da interação humano-computador. Agradecemos aos orientadores, professores e colegas que contribuíram com seu conhecimento e apoio durante o desenvolvimento desta pesquisa.</p>
-  </section>
-
-  <section class="content-section" id="introducao">
-    <h2>INTRODUÇÃO</h2>
-    <p>A Realidade Virtual (RV) emergiu nas últimas décadas como uma das áreas mais promissoras da computação, oferecendo possibilidades únicas de interação e imersão em ambientes sintéticos. Este trabalho apresenta uma análise abrangente das principais formas e aplicações da Realidade Virtual Imersiva, explorando seus conceitos fundamentais, tecnologias e impactos em diversas áreas do conhecimento.</p>
-    <p>Através de extensa pesquisa bibliográfica em livros, artigos científicos, centros de pesquisa e desenvolvimento, bem como recursos disponíveis na Internet, buscamos consolidar o conhecimento sobre esta área em constante evolução, apresentando desde os conceitos básicos até as aplicações mais avançadas da tecnologia.</p>
-  </section>
-
-  <section class="content-section" id="capitulo1">
-    <h2>1. CAPÍTULO 1 - CONCEITOS FUNDAMENTAIS</h2>
-    <p>Para compreender a Realidade Virtual em sua totalidade, é fundamental estabelecer os conceitos básicos que fundamentam esta tecnologia. Este capítulo apresenta as noções de Ciberespaço, Espaço e Cibertempo, elementos essenciais para a construção de experiências imersivas.</p>
-
-    <div class="subsection" id="capitulo1-1">
-      <h3>1.1 O CIBERESPAÇO</h3>
-      <p>O Ciberespaço representa o ambiente digital onde ocorrem as interações virtuais. Conceito popularizado por William Gibson em "Neuromancer", o ciberespaço transcende as limitações físicas, criando um universo paralelo de informações e experiências digitais onde usuários podem interagir de formas impossíveis no mundo real.</p>
-    </div>
-
-    <div class="subsection" id="capitulo1-2">
-      <h3>1.2 O ESPAÇO</h3>
-      <p>O conceito de espaço na Realidade Virtual difere fundamentalmente do espaço físico tradicional. Aqui, exploramos como a percepção espacial é recriada através de tecnologias computacionais, permitindo a navegação em ambientes tridimensionais sintéticos que podem obedecer ou não às leis da física convencional.</p>
-    </div>
-
-    <div class="subsection" id="capitulo1-3">
-      <h3>1.3 O CIBERTEMPO</h3>
-      <p>O Cibertempo representa a dimensão temporal nos ambientes virtuais, que pode ser manipulada de formas impossíveis no mundo real. Em ambientes de RV, o tempo pode ser acelerado, desacelerado ou até mesmo revertido, proporcionando experiências únicas de simulação e treinamento.</p>
-    </div>
-  </section>
-
-  <section class="content-section" id="capitulo2">
-    <h2>2. CAPÍTULO 2 - O QUE É REALIDADE VIRTUAL</h2>
-    <p>Este capítulo explora a natureza da Realidade Virtual, apresentando sua evolução histórica e os conceitos fundamentais que definem esta tecnologia revolucionária.</p>
-
-    <div class="subsection" id="capitulo2-1">
-      <h3>2.1 BREVE HISTÓRICO</h3>
-      <p>A história da Realidade Virtual remonta às décadas de 1960 e 1970, com os primeiros experimentos de Ivan Sutherland e o desenvolvimento do "Sword of Damocles", considerado o primeiro sistema de RV. Desde então, a tecnologia evoluiu dramaticamente, impulsionada pelos avanços em processamento gráfico, sensores e displays.</p>
-    </div>
-
-    <div class="subsection" id="capitulo2-2">
-      <h3>2.2 DEFINIÇÕES</h3>
-      <p>A Realidade Virtual pode ser definida através de três elementos fundamentais: Interação, Envolvimento e Imersão. Estes três pilares trabalham em conjunto para criar experiências convincentes que transportam o usuário para ambientes sintéticos.</p>
-
-      <div id="capitulo2-2-1">
-        <h4>2.2.1 Interação</h4>
-        <p>A interação em RV refere-se à capacidade do usuário de manipular e modificar o ambiente virtual em tempo real. Através de dispositivos como luvas de dados, joysticks e controladores de movimento, os usuários podem interagir naturalmente com objetos virtuais.</p>
+    <section class="authors">
+      <div class="author-card">
+        <h3>Raid Nadim Aboul Hosn</h3>
+        <p>Tecnólogo em Processamento de Dados</p>
+        <p><strong>CESUPA</strong> - Centro de Ensino Superior do Pará</p>
+        <p>21315 80th Ave W #220</p>
+        <p>Edmonds, WA 98026</p>
+        <p>USA</p>
+        <p><a href="mailto:raidhosn@msn.com" style="color: #0000EE;">raidhosn@msn.com</a></p>
       </div>
 
-      <div id="capitulo2-2-2">
-        <h4>2.2.2 Envolvimento</h4>
-        <p>O envolvimento representa o grau de engajamento psicológico e emocional do usuário com o ambiente virtual. Sistemas de RV bem projetados criam um forte senso de presença, fazendo com que o usuário se sinta genuinamente parte do mundo virtual.</p>
+      <div class="author-card">
+        <h3>Claudia Pereira</h3>
+        <h3 style="margin-top: 10px;">Jackson Costa</h3>
+        <p>Tecnóloga em Processamento de Dados</p>
+        <p><strong>CESUPA</strong> - Centro de Ensino Superior do Pará</p>
+        <p>Rua Antonio Everdosa 1245</p>
+        <p>CEP: 66080-190</p>
+        <p>Belém-Pará-Brasil</p>
+        <p><a href="mailto:menael@amazon.com.br" style="color: #0000EE;">menael@amazon.com.br</a></p>
+      </div>
+    </section>
+
+    <div class="advisors">
+      <p><strong>Orientador:</strong> Profª. Ms. Marianne Kogut Eliasquevici</p>
+      <p><strong>Coorientador:</strong> Prof. Dr. Gustavo Augusto Lima de Campos</p>
+      <p><strong>Supervisão Metodológica:</strong> Profª. Ms. Maria de Fátima Frayha de Souza</p>
+    </div>
+
+    <section class="content-section">
+      <h2>DEDICATÓRIAS E AGRADECIMENTOS</h2>
+      <p>Este trabalho é dedicado a todos aqueles que acreditaram no potencial da Realidade Virtual como ferramenta transformadora da interação humano-computador.</p>
+      <p>Agradecemos aos nossos orientadores, Profª. Ms. Marianne Kogut Eliasquevici e Prof. Dr. Gustavo Augusto Lima de Campos, pela dedicação, paciência e conhecimento compartilhado durante todo o desenvolvimento desta pesquisa.</p>
+      <p>À Profª. Ms. Maria de Fátima Frayha de Souza, pela supervisão metodológica que foi fundamental para a estruturação deste trabalho.</p>
+      <p>Aos nossos professores do CESUPA, que ao longo do curso nos proporcionaram a base de conhecimento necessária para a realização desta pesquisa.</p>
+      <p>Aos nossos familiares e amigos, pelo apoio incondicional e compreensão durante os momentos de ausência necessários para a conclusão deste trabalho.</p>
+      <p>A todos que, direta ou indiretamente, contribuíram para a realização desta pesquisa sobre Realidade Virtual Imersiva.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>INTRODUÇÃO</h2>
+      <p>A Realidade Virtual (RV) emergiu nas últimas décadas como uma das áreas mais promissoras e revolucionárias da ciência da computação. Sua capacidade de criar ambientes sintéticos tridimensionais com os quais os usuários podem interagir de forma natural e intuitiva representa um paradigma fundamental na evolução da interface humano-computador.</p>
+
+      <p>O conceito de Realidade Virtual transcende a simples apresentação de gráficos tridimensionais em uma tela. Trata-se da criação de experiências imersivas que envolvem múltiplos sentidos humanos - visão, audição, tato, e potencialmente olfato e paladar - para transportar o usuário para um mundo completamente novo, seja ele uma recriação fiel da realidade, uma simulação de ambientes impossíveis ou perigosos, ou uma visualização abstrata de dados e conceitos complexos.</p>
+
+      <p>Desde os primeiros experimentos de Ivan Sutherland na década de 1960 com o "Sword of Damocles", considerado o primeiro sistema de realidade virtual, até os sofisticados sistemas contemporâneos, a tecnologia de RV percorreu um longo caminho. Os avanços em processamento gráfico, capacidade computacional, miniaturização de componentes eletrônicos e desenvolvimento de novos algoritmos tornaram possível a criação de experiências virtuais cada vez mais convincentes e acessíveis.</p>
+
+      <p>Este trabalho apresenta uma análise abrangente das principais formas e aplicações da Realidade Virtual Imersiva, explorando seus conceitos fundamentais, tecnologias habilitadoras e impactos em diversas áreas do conhecimento humano. Nosso objetivo é consolidar o entendimento sobre esta tecnologia emergente, demonstrando seu potencial transformador e as direções futuras de seu desenvolvimento.</p>
+
+      <p>Para compreender plenamente a Realidade Virtual, é necessário primeiro estabelecer os conceitos fundamentais que a sustentam. Assim, iniciamos nossa análise com a exploração de noções essenciais como Ciberespaço, Espaço e Cibertempo, que fornecem o arcabouço conceitual necessário para entender como ambientes virtuais são criados e experienciados.</p>
+
+      <p>Em seguida, examinamos as diversas formas que a Realidade Virtual pode assumir - desde sistemas de simulação até realidade aumentada, telepresença e interfaces ciborgues - demonstrando a versatilidade e amplitude desta tecnologia. Particular atenção é dedicada aos aspectos de imersão, interação e envolvimento, os três pilares fundamentais que definem a qualidade e eficácia de uma experiência de RV.</p>
+
+      <p>A implementação de sistemas de Realidade Virtual requer hardware especializado e sofisticado. Portanto, dedicamos um capítulo inteiro à análise dos dispositivos que tornam a RV possível: displays visuais (desde HMDs até sistemas CAVE), sistemas de rastreamento de movimento, processadores gráficos de alto desempenho e interfaces hápticas que proporcionam feedback tátil e de força.</p>
+
+      <p>A aplicabilidade da Realidade Virtual se estende por praticamente todas as áreas do empreendimento humano. Desde aplicações médicas - como treinamento cirúrgico e tratamento de fobias - até educação, entretenimento, arquitetura, engenharia e até mesmo religião e arte, a RV está transformando a forma como trabalhamos, aprendemos e nos relacionamos com informação e entre nós mesmos.</p>
+
+      <p>Este trabalho foi desenvolvido através de extensa pesquisa bibliográfica, incluindo livros especializados, artigos científicos de periódicos internacionais, recursos online de centros de pesquisa em RV, documentação técnica de fabricantes, anais de conferências especializadas (como SIGGRAPH e IEEE VR), além de palestras e workshops ministrados por especialistas da área.</p>
+
+      <p>A metodologia empregada buscou não apenas compilar informações existentes, mas também analisá-las criticamente, identificando tendências, desafios e oportunidades no campo da Realidade Virtual Imersiva. Nosso objetivo é que este trabalho sirva não apenas como um documento histórico do estado da arte da RV no final dos anos 1990, mas também como uma fonte de consulta útil para estudantes, pesquisadores e profissionais interessados nesta fascinante área da tecnologia.</p>
+
+      <p>Convidamos o leitor a explorar conosco este universo virtual, descobrindo como a tecnologia está redefinindo os limites entre o real e o virtual, entre o possível e o imaginário, e como a Realidade Virtual Imersiva está moldando o futuro da interação humano-computador.</p>
+    </section>
+
+    <section class="toc">
+      <h2>ÍNDICE</h2>
+
+      <div class="toc-section">
+        <a href="capitulo1.html"><strong>1. CAPÍTULO 1 - CONCEITOS FUNDAMENTAIS</strong></a>
+        <div class="toc-subsection">
+          <a href="capitulo1.html#ciberesp aco">1.1 O CIBERESPAÇO</a>
+          <a href="capitulo1.html#espaco">1.2 O ESPAÇO</a>
+          <a href="capitulo1.html#cibertempo">1.3 O CIBERTEMPO</a>
+        </div>
       </div>
 
-      <div id="capitulo2-2-3">
-        <h4>2.2.3 Imersão</h4>
-        <p>A imersão é a qualidade técnica que determina quão completamente o sistema de RV consegue isolar o usuário do mundo real e substituir suas percepções sensoriais por estímulos virtuais. Quanto maior a imersão, mais convincente é a experiência virtual.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="content-section" id="capitulo3">
-    <h2>3. CAPÍTULO 3 - FORMAS DE REALIDADE VIRTUAL IMERSIVA</h2>
-    <p>Este capítulo apresenta as diversas modalidades de Realidade Virtual Imersiva, explorando suas características, aplicações e tecnologias específicas.</p>
-
-    <div class="subsection" id="capitulo3-1">
-      <h3>3.1 RV DE SIMULAÇÃO</h3>
-      <p>A RV de Simulação é utilizada para replicar situações reais em ambientes controlados, sendo amplamente empregada em treinamento militar, aviação e procedimentos médicos complexos.</p>
-    </div>
-
-    <div class="subsection" id="capitulo3-2">
-      <h3>3.2 REALIDADE VIRTUAL DE PROJEÇÃO</h3>
-      <p>Sistemas como CAVEs (Cave Automatic Virtual Environment) projetam imagens em múltiplas paredes, criando ambientes imersivos sem necessidade de capacetes ou óculos especiais.</p>
-    </div>
-
-    <div class="subsection" id="capitulo3-3">
-      <h3>3.3 AUGMENTED REALITY (REALIDADE REALÇADA)</h3>
-      <p>A Realidade Aumentada sobrepõe elementos virtuais ao mundo real, criando experiências híbridas que combinam o melhor de ambos os mundos.</p>
-    </div>
-
-    <div class="subsection" id="capitulo3-4">
-      <h3>3.4 DISPOSITIVOS FÍSICOS</h3>
-      <p>Diversos dispositivos hápticos proporcionam feedback sensorial além do visual e auditivo:</p>
-
-      <div id="capitulo3-4-1">
-        <h4>3.4.1 Feedback Tátil</h4>
-        <p>Tecnologias que simulam o sentido do tato através de vibrações e pressões controladas.</p>
+      <div class="toc-section">
+        <a href="capitulo2.html"><strong>2. CAPÍTULO 2 - O QUE É REALIDADE VIRTUAL</strong></a>
+        <div class="toc-subsection">
+          <a href="capitulo2.html#historico">2.1 BREVE HISTÓRICO</a>
+          <a href="capitulo2.html#definicoes">2.2 DEFINIÇÕES</a>
+          <a href="capitulo2.html#interacao">2.2.1 Interação</a>
+          <a href="capitulo2.html#envolvimento">2.2.2 Envolvimento</a>
+          <a href="capitulo2.html#imersao">2.2.3 Imersão</a>
+        </div>
       </div>
 
-      <div id="capitulo3-4-2">
-        <h4>3.4.2 Feedback de Força</h4>
-        <p>Sistemas que recriam a sensação de resistência e peso dos objetos virtuais.</p>
+      <div class="toc-section">
+        <a href="capitulo3.html"><strong>3. CAPÍTULO 3 - FORMAS DE REALIDADE VIRTUAL IMERSIVA</strong></a>
+        <div class="toc-subsection">
+          <a href="capitulo3.html#simulacao">3.1 RV DE SIMULAÇÃO</a>
+          <a href="capitulo3.html#projecao">3.2 REALIDADE VIRTUAL DE PROJEÇÃO</a>
+          <a href="capitulo3.html#augmented">3.3 AUGMENTED REALITY (REALIDADE REALÇADA)</a>
+          <a href="capitulo3.html#dispositivos">3.4 DISPOSITIVOS FÍSICOS</a>
+          <a href="capitulo3.html#telepresenca">3.5 TELEPRESENÇA</a>
+          <a href="capitulo3.html#displays">3.6 VISUALLY COUPLED DISPLAYS</a>
+          <a href="capitulo3.html#desktop">3.7 REALIDADE VIRTUAL DE MESA (DESKTOP RV)</a>
+          <a href="capitulo3.html#hipertexto">3.8 HYPERTEXTO (HIPERTEXTO)</a>
+          <a href="capitulo3.html#som3d">3.9 SOM 3D</a>
+          <a href="capitulo3.html#ciborg">3.10 CIBORG</a>
+        </div>
       </div>
 
-      <div id="capitulo3-4-3">
-        <h4>3.4.3 Feedback Térmico</h4>
-        <p>Dispositivos capazes de simular sensações de temperatura nos ambientes virtuais.</p>
-      </div>
-    </div>
-
-    <div class="subsection" id="capitulo3-5">
-      <h3>3.5 TELEPRESENÇA</h3>
-      <p>A telepresença permite que usuários operem em ambientes remotos como se estivessem fisicamente presentes, com aplicações em cirurgias robóticas e exploração espacial.</p>
-    </div>
-
-    <div class="subsection" id="capitulo3-6">
-      <h3>3.6 VISUALLY COUPLED DISPLAYS (DISPLAYS VISUALMENTE CASADOS)</h3>
-      <p>Sistemas que ajustam a imagem virtual conforme os movimentos da cabeça do usuário, mantendo a coerência espacial.</p>
-    </div>
-
-    <div class="subsection" id="capitulo3-7">
-      <h3>3.7 REALIDADE VIRTUAL DE MESA (DESKTOP RV)</h3>
-      <p>Forma mais acessível de RV que utiliza monitores convencionais para apresentar ambientes tridimensionais interativos.</p>
-    </div>
-
-    <div class="subsection" id="capitulo3-8">
-      <h3>3.8 HYPERTEXTO (HIPERTEXTO)</h3>
-      <p>Sistemas de navegação não-linear que permitem exploração intuitiva de informações interconectadas em ambientes virtuais.</p>
-    </div>
-
-    <div class="subsection" id="capitulo3-9">
-      <h3>3.9 SOM 3D</h3>
-      <p>Áudio espacializado que recria com precisão a posição e movimento de fontes sonoras no ambiente virtual, aumentando dramaticamente a imersão.</p>
-    </div>
-
-    <div class="subsection" id="capitulo3-10">
-      <h3>3.10 CIBORG</h3>
-      <p>A integração entre sistemas biológicos e eletrônicos, expandindo as capacidades humanas através de próteses inteligentes e interfaces neurais.</p>
-    </div>
-  </section>
-
-  <section class="content-section" id="capitulo4">
-    <h2>4. CAPÍTULO 4 - DISPOSITIVOS PARA REALIDADE VIRTUAL</h2>
-    <p>Este capítulo examina os componentes hardware essenciais para sistemas de Realidade Virtual.</p>
-
-    <div class="subsection" id="capitulo4-1">
-      <h3>4.1 DISPOSITIVOS VISUAIS</h3>
-
-      <div id="capitulo4-1-1">
-        <h4>4.1.1 Visores Desktop</h4>
-        <p>Monitores convencionais adaptados para apresentação de conteúdo tridimensional estereoscópico.</p>
+      <div class="toc-section">
+        <a href="capitulo4.html"><strong>4. CAPÍTULO 4 - DISPOSITIVOS PARA REALIDADE VIRTUAL</strong></a>
+        <div class="toc-subsection">
+          <a href="capitulo4.html#visuais">4.1 DISPOSITIVOS VISUAIS</a>
+          <a href="capitulo4.html#rastreamento">4.2 SISTEMAS DE RASTREAMENTO</a>
+          <a href="capitulo4.html#processamento">4.3 PROCESSAMENTO DE IMAGEM</a>
+          <a href="capitulo4.html#entrada">4.4 DISPOSITIVOS DE ENTRADA</a>
+        </div>
       </div>
 
-      <div id="capitulo4-1-2">
-        <h4>4.1.2 HMD's (Head Mounted Displays)</h4>
-        <p>Capacetes ou óculos que posicionam telas diretamente diante dos olhos do usuário, bloqueando estímulos visuais externos.</p>
+      <div class="toc-section">
+        <a href="capitulo5.html"><strong>5. CAPÍTULO 5 - APLICABILIDADE</strong></a>
+        <div class="toc-subsection">
+          <a href="capitulo5.html#biopsicossociais">5.1 DISTÚRBIOS BIOPSICOSSOCIAIS</a>
+          <a href="capitulo5.html#medicina">5.2 MEDICINA</a>
+          <a href="capitulo5.html#arquitetura">5.3 ARQUITETURA E CONSTRUÇÃO</a>
+          <a href="capitulo5.html#arte">5.4 ARTE</a>
+          <a href="capitulo5.html#negocios">5.5 NEGÓCIOS</a>
+          <a href="capitulo5.html#deficiencias">5.6 DEFICIÊNCIAS</a>
+          <a href="capitulo5.html#educacao">5.7 EDUCAÇÃO E TREINAMENTO</a>
+          <a href="capitulo5.html#engenharia">5.8 ENGENHARIA</a>
+          <a href="capitulo5.html#entretenimento">5.9 ENTRETENIMENTO</a>
+          <a href="capitulo5.html#marketing">5.10 MARKETING</a>
+          <a href="capitulo5.html#militarismo">5.11 MILITARISMO</a>
+          <a href="capitulo5.html#religiao">5.12 RELIGIÃO</a>
+          <a href="capitulo5.html#sexo">5.13 SEXO</a>
+          <a href="capitulo5.html#comunidades">5.14 COMUNIDADES VIRTUAIS</a>
+          <a href="capitulo5.html#ciclismo">5.15 PASSEIO CICLÍSTICO VIRTUAL</a>
+        </div>
       </div>
 
-      <div id="capitulo4-1-3">
-        <h4>4.1.3 AMD's (Arm-Mounted Displays)</h4>
-        <p>Displays montados em braços mecânicos articulados, combinando mobilidade com qualidade visual superior.</p>
+      <div class="toc-section">
+        <a href="consideracoes.html"><strong>6. CONSIDERAÇÕES FINAIS</strong></a>
       </div>
 
-      <div id="capitulo4-1-4">
-        <h4>4.1.4 Sistemas baseados em Projeção de Tela Simples</h4>
-        <p>Projetores que criam grandes superfícies de visualização imersiva.</p>
+      <div class="toc-section">
+        <a href="bibliografia.html">BIBLIOGRAFIA</a>
       </div>
 
-      <div id="capitulo4-1-5">
-        <h4>4.1.5 Sistemas baseados em Projeção de Tela Múltipla</h4>
-        <p>Configurações como CAVEs que utilizam múltiplos projetores sincronizados para criar ambientes envolventes.</p>
+      <div class="toc-section">
+        <a href="glossario.html">GLOSSÁRIO</a>
       </div>
-    </div>
+    </section>
 
-    <div class="subsection" id="capitulo4-2">
-      <h3>4.2 SISTEMAS DE RASTREAMENTO</h3>
-
-      <div id="capitulo4-2-1">
-        <h4>4.2.1 Eletromagnético</h4>
-        <p>Sensores que detectam posição e orientação através de campos magnéticos.</p>
-      </div>
-
-      <div id="capitulo4-2-2">
-        <h4>4.2.2 Mecânico</h4>
-        <p>Sistemas de rastreamento baseados em estruturas físicas articuladas.</p>
-      </div>
-
-      <div id="capitulo4-2-3">
-        <h4>4.2.3 Acústico</h4>
-        <p>Tecnologias que utilizam ultrassom para determinar posições espaciais.</p>
-      </div>
-
-      <div id="capitulo4-2-4">
-        <h4>4.2.4 Óptico</h4>
-        <p>Sistemas baseados em câmeras e marcadores visuais para rastreamento preciso.</p>
-      </div>
-
-      <div id="capitulo4-2-5">
-        <h4>4.2.5 Inércia</h4>
-        <p>Sensores inerciais que detectam aceleração e rotação, comumente usados em dispositivos móveis.</p>
-      </div>
-    </div>
-
-    <div class="subsection" id="capitulo4-3">
-      <h3>4.3 PROCESSAMENTO DE IMAGEM</h3>
-      <p>Computadores gráficos de alto desempenho necessários para renderizar ambientes virtuais complexos em tempo real.</p>
-    </div>
-
-    <div class="subsection" id="capitulo4-4">
-      <h3>4.4 DISPOSITIVOS DE ENTRADA</h3>
-      <p>Interfaces variadas incluindo luvas de dados, joysticks 3D, sensores de movimento e comandos de voz que permitem interação natural com ambientes virtuais.</p>
-    </div>
-  </section>
-
-  <section class="content-section" id="capitulo5">
-    <h2>5. CAPÍTULO 5 - APLICABILIDADE</h2>
-    <p>A Realidade Virtual encontra aplicações em praticamente todas as áreas do conhecimento humano. Este capítulo explora os principais campos de aplicação desta tecnologia.</p>
-
-    <div class="subsection" id="capitulo5-1">
-      <h3>5.1 DISTÚRBIOS BIOPSICOSSOCIAIS</h3>
-      <p>Tratamento de fobias, transtorno de estresse pós-traumático e outros distúrbios psicológicos através de terapia de exposição virtual controlada.</p>
-    </div>
-
-    <div class="subsection" id="capitulo5-2">
-      <h3>5.2 MEDICINA</h3>
-      <p>Treinamento cirúrgico, planejamento de procedimentos complexos e reabilitação física através de ambientes virtuais terapêuticos.</p>
-    </div>
-
-    <div class="subsection" id="capitulo5-3">
-      <h3>5.3 ARQUITETURA E CONSTRUÇÃO</h3>
-      <p>Visualização de projetos arquitetônicos antes da construção, permitindo modificações e aprovações mais eficientes.</p>
-    </div>
-
-    <div class="subsection" id="capitulo5-4">
-      <h3>5.4 ARTE</h3>
-      <p>Criação de novas formas de expressão artística em espaços tridimensionais imersivos e interativos.</p>
-    </div>
-
-    <div class="subsection" id="capitulo5-5">
-      <h3>5.5 NEGÓCIOS</h3>
-      <p>Reuniões virtuais, apresentações de produtos e treinamento corporativo em ambientes simulados.</p>
-    </div>
-
-    <div class="subsection" id="capitulo5-6">
-      <h3>5.6 DEFICIÊNCIAS</h3>
-      <p>Tecnologias assistivas que proporcionam novas formas de interação e comunicação para pessoas com limitações físicas ou sensoriais.</p>
-    </div>
-
-    <div class="subsection" id="capitulo5-7">
-      <h3>5.7 EDUCAÇÃO E TREINAMENTO</h3>
-      <p>Ambientes de aprendizado imersivos que permitem experimentação prática sem riscos, desde dissecações virtuais até simulações históricas.</p>
-    </div>
-
-    <div class="subsection" id="capitulo5-8">
-      <h3>5.8 ENGENHARIA</h3>
-      <p>Prototipagem virtual, teste de projetos e simulação de processos industriais complexos.</p>
-    </div>
-
-    <div class="subsection" id="capitulo5-9">
-      <h3>5.9 ENTRETENIMENTO</h3>
-      <p>Jogos imersivos, parques temáticos virtuais e experiências cinematográficas interativas.</p>
-    </div>
-
-    <div class="subsection" id="capitulo5-10">
-      <h3>5.10 MARKETING</h3>
-      <p>Demonstrações interativas de produtos, tours virtuais e experiências de marca imersivas.</p>
-    </div>
-
-    <div class="subsection" id="capitulo5-11">
-      <h3>5.11 MILITARISMO</h3>
-      <p>Treinamento de combate, simulação de missões e planejamento estratégico em ambientes virtuais realistas.</p>
-    </div>
-
-    <div class="subsection" id="capitulo5-12">
-      <h3>5.12 RELIGIÃO</h3>
-      <p>Recriação de locais sagrados e experiências espirituais virtuais para fiéis ao redor do mundo.</p>
-    </div>
-
-    <div class="subsection" id="capitulo5-13">
-      <h3>5.13 SEXO</h3>
-      <p>Exploração de intimidade virtual e teledildonics, apresentando questões éticas e sociais complexas.</p>
-    </div>
-
-    <div class="subsection" id="capitulo5-14">
-      <h3>5.14 COMUNIDADES VIRTUAIS</h3>
-      <p>Espaços sociais virtuais onde pessoas se encontram, interagem e colaboram independentemente de distâncias geográficas.</p>
-    </div>
-
-    <div class="subsection" id="capitulo5-15">
-      <h3>5.15 PASSEIO CICLÍSTICO VIRTUAL</h3>
-      <p>Sistemas de exercício que combinam atividade física com exploração de ambientes virtuais, tornando o treino mais motivador e envolvente.</p>
-    </div>
-  </section>
-
-  <section class="content-section" id="consideracoes">
-    <h2>6. CONSIDERAÇÕES FINAIS</h2>
-    <p>A Realidade Virtual representa uma das mais significativas revoluções tecnológicas do final do século XX e início do século XXI. Suas aplicações abrangem praticamente todos os aspectos da atividade humana, desde entretenimento até aplicações médicas vitais, passando por educação, treinamento, arte e ciência.</p>
-    <p>Este trabalho buscou apresentar um panorama abrangente das tecnologias, conceitos e aplicações da Realidade Virtual Imersiva, demonstrando seu potencial transformador para a sociedade. À medida que a tecnologia continua evoluindo, podemos esperar sistemas cada vez mais sofisticados, acessíveis e integrados ao nosso cotidiano.</p>
-    <p>As questões éticas, sociais e psicológicas levantadas pela crescente adoção da RV demandam atenção cuidadosa de pesquisadores, desenvolvedores e formuladores de políticas públicas. O futuro da interação humano-computador está sendo moldado hoje, e a Realidade Virtual certamente desempenhará papel central nesta transformação.</p>
-  </section>
-
-  <section class="content-section" id="bibliografia">
-    <h2>BIBLIOGRAFIA</h2>
-    <p>Este trabalho foi fundamentado em extensa pesquisa bibliográfica incluindo:</p>
-    <ul style="margin-left: 30px; line-height: 2;">
-      <li>Livros especializados em Realidade Virtual e Computação Gráfica</li>
-      <li>Artigos científicos publicados em periódicos internacionais</li>
-      <li>Recursos online de centros de pesquisa em RV</li>
-      <li>Documentação técnica de fabricantes de hardware e software</li>
-      <li>Anais de conferências especializadas (SIGGRAPH, IEEE VR, etc.)</li>
-      <li>Palestras e workshops ministrados por especialistas da área</li>
-    </ul>
-  </section>
-
-  <section class="content-section" id="glossario">
-    <h2>GLOSSÁRIO</h2>
-    <p><strong>CAVE:</strong> Cave Automatic Virtual Environment - sistema de projeção multi-superfície.</p>
-    <p><strong>Ciberespaço:</strong> Ambiente digital onde ocorrem interações virtuais.</p>
-    <p><strong>Feedback Háptico:</strong> Retorno sensorial tátil proporcionado por dispositivos especializados.</p>
-    <p><strong>HMD:</strong> Head-Mounted Display - capacete de visualização virtual.</p>
-    <p><strong>Imersão:</strong> Grau em que o sistema isola o usuário do mundo real.</p>
-    <p><strong>Telepresença:</strong> Tecnologia que permite operação remota como se o usuário estivesse presente.</p>
-    <p><strong>VR:</strong> Virtual Reality - Realidade Virtual.</p>
-  </section>
-
-  <div class="contact" id="contato">
-    <a href="./www.oocities.org_files/email6.gif">
+    <div class="contact">
       <img src="./www.oocities.org_files/email6.gif" alt="Email" width="84" height="51">
-    </a>
-    <h3 style="margin: 15px 0 10px;">Email</h3>
-    <a href="mailto:raidhosn@msn.com">raidhosn@msn.com</a>
-  </div>
+      <h3 style="margin: 15px 0 10px;">Contato</h3>
+      <p><a href="mailto:raidhosn@msn.com" style="color: #0000EE;">raidhosn@msn.com</a></p>
+    </div>
 
-  <a href="#topo" class="back-to-top" title="Voltar ao topo">↑ Topo</a>
+    <nav class="navigation">
+      <a href="#" class="nav-button disabled">⬅️ Anterior</a>
+      <a href="index.html" class="nav-button">🏠 Página Principal</a>
+      <a href="capitulo1.html" class="nav-button">Próximo ➡️</a>
+    </nav>
+  </div>
 </body>
 </html>
