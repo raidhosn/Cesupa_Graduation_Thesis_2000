@@ -1,0 +1,11 @@
+{
+  "name": "cesupa-thesis-1999",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npx vite",
+    "build": "npx vite build && cp -r images dist/ && cp -r www.oocities.org_files dist/ && cp capitulo*.html consideracoes.html bibliografia.html glossario.html dist/ 2>/dev/null || true",
+    "preview": "npx vite preview"
+  },
+  "devDependencies": {}
+}

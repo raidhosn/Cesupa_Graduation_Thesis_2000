@@ -1,0 +1,7 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f5f5f5" stroke="#999" stroke-width="2"/>
+  <rect x="50" y="50" width="500" height="300" fill="#e0e0e0" stroke="#666" stroke-width="1"/>
+  <text x="300" y="170" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">FIGURA 2</text>
+  <text x="300" y="210" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#555">Link Trainer</text>
+  <text x="300" y="240" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#666">Simulador de Voo (1929)</text>
+</svg>
