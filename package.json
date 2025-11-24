@@ -4,8 +4,10 @@
   "type": "module",
   "scripts": {
     "dev": "npx vite",
-    "build": "npx vite build && cp -r images dist/ && cp -r www.oocities.org_files dist/ && cp capitulo*.html consideracoes.html bibliografia.html glossario.html dist/ 2>/dev/null || true",
+    "build": "npx vite build && node scripts/build.js",
     "preview": "npx vite preview"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "vite": "^7.2.4"
+  }
 }
